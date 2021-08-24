@@ -10,6 +10,30 @@
 <body class="bg">
   
   <style>
+    .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(236, 15, 15, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 5px;
+}
+.ba{
+   border-radius: 5%;
+}
+h1{
+   
+  font-size: 6px0;
+   color: rgb(226, 223, 43);
+   text-align: center;
+}
+
   .bg { 
     
     background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
@@ -53,8 +77,10 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
 .social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
 .social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
 .social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+
+
 </style>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-danger">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -233,16 +259,16 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
       <br><br>
       
       <form>
-        <div class="mb-3 bg-warning">
+        <div class="mb-3 bg-primary">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+         
         </div>
-        <div class="mb-3  bg-warning">
+        <div class="mb-3  bg-primary">
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
-        <div class="mb-3   bg-warning form-check">
+        <div class="mb-3   bg-primary form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
@@ -311,7 +337,13 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 <br><br>
+<div class="grid-container bg-danger">
+  <img src="images/b2.jpg" class="ba" alt="...">
 
+<h1 class="base">PHOTO FAITE AU NOUVEAU BRUNSWICK LA VILLE DE MONCTON LORS DE LA RENCONTRE AVEC DES AMIS NOUVEAU IMMIGRANTS  UNE TUNISIENNE ET UN CHINWA</h1>
+  
+</div>
+<br><br>
 <!--footer starts from here-->
 <footer class="footer bg-danger">
 <div class="container bottom_border">
@@ -327,20 +359,8 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
 
 </div>
 
-<div class="col s12 m8 offset-m2 l6 offset-l3">
-  <div class="card-panel grey lighten-5 z-depth-1">
-    <div class="row valign-wrapper">
-      <div class="col s2">
-        <img src="images/yuna.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-      </div>
-      <div class="col s10">
-        <span class="black-text">
-          This is a square image. Add the "circle" class to it to make it appear circular.
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
+
+
       
 <div class=" col-sm-4 col-md  col-6 col">
 <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
